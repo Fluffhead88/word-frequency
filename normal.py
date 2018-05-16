@@ -15,10 +15,11 @@ with open('sample.txt') as infile:
 
 
 
-most = sorted((v,k) for (k,v) in my_dict.items())
+most = sorted([(k,v) for (v,k) in my_dict.items()], reverse=True)
 
-print (most)
+sorted = dict((key,value) for key, value in most if key > 420)
 
+print (sorted)
 #def sort_words(x):
 #    return x[1]
 #sorted(my_dict, key=sort_words)
