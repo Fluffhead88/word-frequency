@@ -1,17 +1,19 @@
 # normal version of word frequency program
 
+my_dict = {}
+
 with open('sample.txt') as infile:
     my_contents = infile.read()
-    my_contents.replace("!", "").replace(":", "").replace(".", "").replace("/n", "").replace("*", "").replace("#", "").replace("?", "").replace(("-", "").replace(",", "")
-    my_contents.lower()
+    for words in my_contents:
+        my_words = my_contents.split().lower().replace("!", "").replace(":", "").replace(".", "").replace("/n", "").replace("#", "").replace("?", "").replace(("-", "").replace(",", "")
 
-    my_words = my_contents.split()
 
-        my_dict = {}
 
-    for word in my_words:
-        if word not in my_dict.keys():
+
+
+        for word in my_words:
+            if word not in my_dict:
             my_dict[word] = 0
             my_dict[word] += 1
-        if my_dict[word] > 40
-        print my_dict[word]
+            if my_dict[word] > 40
+            print my_dict[word]
