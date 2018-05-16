@@ -11,5 +11,10 @@ with open('sample.txt') as infile:
         if word not in my_dict:
             my_dict[word] = 0
         my_dict[word] += 1
-        if my_dict[word] > 2800:
-            print (my_dict[word])
+        if my_dict[word] > 1500:
+            print(my_dict[word], word)
+
+print(my_dict)
+for occur in my_dict:
+    if occur > 1500:
+        print (occur)
