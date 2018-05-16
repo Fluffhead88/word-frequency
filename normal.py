@@ -13,8 +13,11 @@ with open('sample.txt') as infile:
             my_dict[word] = 0
         my_dict[word] += 1
 
-print(my_dict)
 
+
+most = sorted((v,k) for (k,v) in my_dict.items())
+
+print (most)
 
 #def sort_words(x):
 #    return x[1]
